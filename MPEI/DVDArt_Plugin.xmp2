@@ -15,7 +15,7 @@
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\DVDArt_Plugin.dll</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{9d3d7efb-e025-422a-8fdd-f24ccf451cfd}-DVDArt_Plugin.dll</ZipFileName>
-              <DestinationFilename>%Base%\DVDArt_Plugin.dll</DestinationFilename>
+              <DestinationFilename>%Plugins%\process\DVDArt_Plugin.dll</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="PlatformTarget_x86">
               <Param1 />
@@ -46,21 +46,21 @@
               <UpdateOption>AlwaysOverwrite</UpdateOption>
               <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\System.Data.SQLite.dll</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{1fbd08de-c668-40b0-9f4f-2979ade36654}-System.Data.SQLite.dll</ZipFileName>
-              <DestinationFilename>%Base%\System.Data.SQLite.dll</DestinationFilename>
+              <DestinationFilename>%Plugins%\process\System.Data.SQLite.dll</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="PlatformTarget_x86">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x86\SQLite.Interop.dll</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{44695331-cbee-4680-b0c9-ff9c925b56fa}-SQLite.Interop.dll</ZipFileName>
-              <DestinationFilename>%Base%\SQLite.Interop.dll</DestinationFilename>
+              <DestinationFilename>%Plugins%\process\x86\SQLite.Interop.dll</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="PlatformTarget_x64">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x64\SQLite.Interop.dll</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{8ec3d500-6ad3-43a9-8a69-709b110a0ac5}-SQLite.Interop.dll</ZipFileName>
-              <DestinationFilename>%Base%\SQLite.Interop.dll</DestinationFilename>
+              <DestinationFilename>%Plugins%\process\x64\SQLite.Interop.dll</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -81,21 +81,21 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\..\..\DVDArt_Plugin\colors.xml</LocalFileName>
+              <LocalFileName>colors.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{e2dd90f1-d9c3-488b-812a-f5fbc024e686}-colors.xml</ZipFileName>
               <DestinationFilename>%Base%\colors.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\..\..\DVDArt_Plugin\delegates.xml</LocalFileName>
+              <LocalFileName>delegates.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{fb078052-f1d1-4567-b005-2bcf060ec4d0}-delegates.xml</ZipFileName>
               <DestinationFilename>%Base%\delegates.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\..\..\DVDArt_Plugin\magic.xml</LocalFileName>
+              <LocalFileName>magic.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{9ba9275a-8198-4f2c-801a-292bb3fe6613}-magic.xml</ZipFileName>
               <DestinationFilename>%Base%\magic.xml</DestinationFilename>
             </FileItem>
@@ -122,7 +122,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
               <Description />
             </SectionParam>
             <SectionParam Name="Left part image">
-              <Value>..\..\..\DVDArt_Plugin\DVDArt_Plugin.png</Value>
+              <Value>DVDArt_Plugin.png</Value>
               <ValueType>File</ValueType>
               <Description />
             </SectionParam>
@@ -154,7 +154,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
               <Description>Description of section, shown in under section title</Description>
             </SectionParam>
             <SectionParam Name="Header image">
-              <Value>..\..\..\DVDArt_Plugin\DVDArt_Plugin_logo.png</Value>
+              <Value>DVDArt_Plugin_logo.png</Value>
               <ValueType>File</ValueType>
               <Description>Image in upper right part</Description>
             </SectionParam>
@@ -211,7 +211,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
               <Description />
             </SectionParam>
             <SectionParam Name="Left part image">
-              <Value>..\..\..\StreamedMP-MOD\MP_Packaging.png</Value>
+              <Value>DVDArt_Plugin.png</Value>
               <ValueType>File</ValueType>
               <Description />
             </SectionParam>
@@ -321,8 +321,10 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Revision>0</Revision>
     </Version>
     <ExtensionDescription>This plugin scans your MovingPictures, MyFilms, MyVideos, TVSeries and Music databases and downloads DVD Art, Clear Art, Clear Logo, CD Art, Banners, Actor, Writer and Director images from the fanart.tv and themoviedb.org websites where applicable.</ExtensionDescription>
-    <VersionDescription>* Added scroll bar in configurator to allow scroll when window doesn't fit screen.
-
+    <VersionDescription>* Added scroll bar in configurator to allow scroll when window doesn't fit screen.
+
+
+
 * x86/x64 Version</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/DVDArt/releases/download/v[Version]/[Name]-v[Version].mpe1</OnlineLocation>
@@ -333,7 +335,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <Params>
       <Items>
         <SectionParam Name="Icon">
-          <Value>..\..\..\DVDArt_Plugin\DVDArt_Plugin_logo.png</Value>
+          <Value>DVDArt_Plugin_logo.png</Value>
           <ValueType>File</ValueType>
           <Description>The icon file of the package (jpg,png,bmp)</Description>
         </SectionParam>
@@ -369,7 +371,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\DVDArt_Plugin.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{9d3d7efb-e025-422a-8fdd-f24ccf451cfd}-DVDArt_Plugin.dll</ZipFileName>
-        <DestinationFilename>%Base%\DVDArt_Plugin.dll</DestinationFilename>
+        <DestinationFilename>%Plugins%\process\DVDArt_Plugin.dll</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
@@ -390,21 +392,21 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <UpdateOption>AlwaysOverwrite</UpdateOption>
         <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\System.Data.SQLite.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{1fbd08de-c668-40b0-9f4f-2979ade36654}-System.Data.SQLite.dll</ZipFileName>
-        <DestinationFilename>%Base%\System.Data.SQLite.dll</DestinationFilename>
+        <DestinationFilename>%Plugins%\process\System.Data.SQLite.dll</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x86\SQLite.Interop.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{44695331-cbee-4680-b0c9-ff9c925b56fa}-SQLite.Interop.dll</ZipFileName>
-        <DestinationFilename>%Base%\SQLite.Interop.dll</DestinationFilename>
+        <DestinationFilename>%Plugins%\process\x86\SQLite.Interop.dll</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x64\SQLite.Interop.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{8ec3d500-6ad3-43a9-8a69-709b110a0ac5}-SQLite.Interop.dll</ZipFileName>
-        <DestinationFilename>%Base%\SQLite.Interop.dll</DestinationFilename>
+        <DestinationFilename>%Plugins%\process\x64\SQLite.Interop.dll</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
@@ -416,43 +418,36 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\..\..\DVDArt_Plugin\colors.xml</LocalFileName>
+        <LocalFileName>colors.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{e2dd90f1-d9c3-488b-812a-f5fbc024e686}-colors.xml</ZipFileName>
         <DestinationFilename>%Base%\colors.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\..\..\DVDArt_Plugin\delegates.xml</LocalFileName>
+        <LocalFileName>delegates.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{fb078052-f1d1-4567-b005-2bcf060ec4d0}-delegates.xml</ZipFileName>
         <DestinationFilename>%Base%\delegates.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\..\..\DVDArt_Plugin\magic.xml</LocalFileName>
+        <LocalFileName>magic.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{9ba9275a-8198-4f2c-801a-292bb3fe6613}-magic.xml</ZipFileName>
         <DestinationFilename>%Base%\magic.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\..\..\DVDArt_Plugin\DVDArt_Plugin.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{3e352454-0afc-411b-b3f6-52ae47790b3b}-DVDArt_Plugin.png</ZipFileName>
+        <LocalFileName>DVDArt_Plugin.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fdf5df30-bc54-417a-8627-e11a5f29f105}-DVDArt_Plugin.png</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\..\..\DVDArt_Plugin\DVDArt_Plugin_logo.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{39f5d531-2e78-47aa-943e-404ece47f3de}-DVDArt_Plugin_logo.png</ZipFileName>
-        <DestinationFilename />
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="true" Modified="true" Condition="None">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\..\..\StreamedMP-MOD\MP_Packaging.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{89c434be-e536-4381-a372-769c8ba40819}-MP_Packaging.png</ZipFileName>
+        <LocalFileName>DVDArt_Plugin_logo.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{3c1615b1-bad8-4101-9a39-e796b2d8eb51}-DVDArt_Plugin_logo.png</ZipFileName>
         <DestinationFilename />
       </FileItem>
     </Items>
