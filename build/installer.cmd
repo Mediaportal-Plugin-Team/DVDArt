@@ -1,7 +1,7 @@
 @ECHO OFF
 CLS
 
-Title Creating DVDArt Installer
+Title Creating DVDArt Plugin Installer
 
 IF "%programfiles(x86)%XXX"=="XXX" GOTO 32BIT
     :: 64-bit

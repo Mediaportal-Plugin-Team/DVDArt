@@ -2395,9 +2395,10 @@ Public Class DVDArt_Common
             image.Dispose()
         End If
 
-        ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12 Or SecurityProtocolType.SystemDefault
+    ' ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12 Or SecurityProtocolType.SystemDefault
+    ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls
 
-        logStats("DVDArt: Initialization complete.", "LOG")
+    logStats("DVDArt: Initialization complete.", "LOG")
 
     End Sub
 

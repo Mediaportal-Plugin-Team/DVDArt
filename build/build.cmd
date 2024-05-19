@@ -27,13 +27,13 @@ IF NOT EXIST "%MSBUILD_PATH%" SET MSBUILD_PATH=%progpath%\Microsoft Visual Studi
 :: Prepare version
 for /f "tokens=*" %%a in ('git rev-list HEAD --count') do set REVISION=%%a 
 set REVISION=%REVISION: =%
-"..\Tools\Tools\sed.exe" -i -r "s/(Assembly(File)?Version\(.[0-9]+\.[0-9]+\.[0-9]+\.)[0-9]+(.\))/\1%REVISION%\3/g" "DVDArt\DVDArt_Plugin\My Project\AssemblyInfo.vb"
+"..\Tools\Tools\sed.exe" -i -r "s/(Assembly(File)?Version\(.[0-9]+\.[0-9]+\.[0-9]+\.)[0-9]+(.\))/\1%REVISION%\3/g" "DVDArt_Plugin\My Project\AssemblyInfo.vb"
 
 :: Build
-"%MSBUILD_PATH%" /target:Rebuild /property:Configuration=RELEASE /property:Platform=%ARCH% /fl /flp:logfile=DVDArt.%ARCH%.log;verbosity=diagnostic DVDArt.sln
+"%MSBUILD_PATH%" /target:Rebuild /property:Configuration=RELEASE /property:Platform=%ARCH% /fl /flp:logfile=DVDArt.%ARCH%.log;verbosity=diagnostic DVDArt_Plugin.sln
 
 :: Revert version
-git checkout "DVDArt\DVDArt_Plugin\My Project\AssemblyInfo.vb"
+git checkout "DVDArt_Plugin\My Project\AssemblyInfo.vb"
 
 CD ..\build
 
