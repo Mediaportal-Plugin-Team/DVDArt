@@ -2245,7 +2245,7 @@ Public Class DVDArt_Common
         fhandle.Close()
 
         ' initialize version
-        _version = "v1.0.4.6"
+        _version = Assembly.GetExecutingAssembly().GetName().Version.ToString()
         _copyright = "Copyright © 2012-" & Year(Today) & ", m3rcury"
 
         logStats("DVDArt: Plugin version " & _version, "LOG")
