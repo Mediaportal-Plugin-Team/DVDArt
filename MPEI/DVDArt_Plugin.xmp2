@@ -321,14 +321,11 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Revision>0</Revision>
     </Version>
     <ExtensionDescription>This plugin scans your MovingPictures, MyFilms, MyVideos, TVSeries and Music databases and downloads DVD Art, Clear Art, Clear Logo, CD Art, Banners, Actor, Writer and Director images from the fanart.tv and themoviedb.org websites where applicable.</ExtensionDescription>
-    <VersionDescription>* Added scroll bar in configurator to allow scroll when window doesn't fit screen.
-
-
-
-* x86/x64 Version</VersionDescription>
+    <VersionDescription>* Resolve bug that prevented the Banner, Backdrop and Cover Art from getting fetched
+</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/DVDArt/releases/download/v[Version]/[Name]-v[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-05-19T23:39:41</ReleaseDate>
+    <ReleaseDate>2024-05-20T12:12:12</ReleaseDate>
     <Tags>dvdart, cover art, clear art, clear logo, scraper, movingpictures, tvseries, music, actors, writers, directors, myfilms</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>[Name]-v[Version].mpe1</Location>
