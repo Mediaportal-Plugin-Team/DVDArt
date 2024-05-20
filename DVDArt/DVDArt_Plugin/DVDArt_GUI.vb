@@ -2285,6 +2285,7 @@ Public Class DVDArt_GUI
 
         Try
 
+            If lv_movies.FocusedItem Is Nothing Then Exit Sub
             If current_imdb_id = lv_movies.FocusedItem.SubItems.Item(1).Text Then Exit Sub
 
             Dim thumbpath As String = Nothing
@@ -2386,6 +2387,7 @@ Public Class DVDArt_GUI
 
         Try
 
+            If lv_person.FocusedItem Is Nothing Then Exit Sub
             If current_person = lv_person.FocusedItem.SubItems.Item(0).Text Then Exit Sub
 
             Dim thumbpath As String
@@ -2413,6 +2415,7 @@ Public Class DVDArt_GUI
 
         Try
 
+            If lv_series.FocusedItem Is Nothing Then Exit Sub
             If current_thetvdb_id = lv_series.FocusedItem.SubItems.Item(1).Text Then Exit Sub
 
             Dim thumbpath, url(2) As String
@@ -2460,6 +2463,7 @@ Public Class DVDArt_GUI
 
         Try
 
+            If lv_artist.FocusedItem Is Nothing Then Exit Sub
             If current_artist = lv_artist.FocusedItem.SubItems.Item(0).Text Then Exit Sub
 
             Dim thumbpath, url(2) As String
@@ -2500,6 +2504,7 @@ Public Class DVDArt_GUI
 
         Try
 
+            If lv_album.FocusedItem Is Nothing Then Exit Sub
             If current_album = lv_album.FocusedItem.SubItems.Item(0).Text Then Exit Sub
 
             Dim thumbpath, url(2) As String
