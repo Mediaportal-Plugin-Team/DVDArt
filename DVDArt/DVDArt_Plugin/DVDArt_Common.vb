@@ -945,7 +945,7 @@ Public Class DVDArt_Common
 
         Dim apikey As String = "bfd6e4e0d4e71237f784b70fc43f8269"
         Dim personalAPIkey As String = p_personalAPIkey
-        Dim url As String = "https://webservice.fanart.tv/v3/" & type & "/" & id & "?api_key=" & apikey
+        Dim url As String = "http://webservice.fanart.tv/v3/" & type & "/" & id & "?api_key=" & apikey
         'Dim url As String = "http://webservice.fanart.tv/" & type & "/" & id & "?api_key=" & apikey
         Dim downstring As String = Nothing
         Dim tries As Integer
@@ -1186,7 +1186,7 @@ Public Class DVDArt_Common
 
         Try
             Dim apikey As String = "cc25933c4094ca50635f94574491f320"
-            Dim url As String = Uri.EscapeUriString("https://api.themoviedb.org/3/search/person?api_key=" & apikey & "&query=" & Trim(LCase(artist)))
+            Dim url As String = Uri.EscapeUriString("http://api.themoviedb.org/3/search/person?api_key=" & apikey & "&query=" & Trim(LCase(artist)))
 
             Dim WebClient As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create(url)
             WebClient.Accept = "application/json"
