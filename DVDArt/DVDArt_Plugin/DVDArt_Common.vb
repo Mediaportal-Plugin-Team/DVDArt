@@ -2268,7 +2268,9 @@ Public Class DVDArt_Common
 
         'Load the assembly from the specified path. 
         Try
-            MyAssembly = [Assembly].LoadFrom(strTempAssmbPath)
+            If IO.File.Exists(strTempAssmbPath) Then
+                MyAssembly = [Assembly].LoadFrom(strTempAssmbPath)
+            End If
         Catch ex As Exception
         End Try
 
