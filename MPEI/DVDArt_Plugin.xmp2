@@ -324,6 +324,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <VersionDescription>* Resolve bug that prevented the Banner, Backdrop and Cover Art from getting fetched
 * Fixed SSL error, null selection error and GUI setting position
 * Fixed static version value
+* Bump ImageMagick version to 7.0.8.11
 * Fix SQLite.Interop location
 </VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
