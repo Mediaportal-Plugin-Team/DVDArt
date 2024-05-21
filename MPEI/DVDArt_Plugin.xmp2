@@ -53,14 +53,14 @@
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x86\SQLite.Interop.dll</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{44695331-cbee-4680-b0c9-ff9c925b56fa}-SQLite.Interop.dll</ZipFileName>
-              <DestinationFilename>%Plugins%\process\x86\SQLite.Interop.dll</DestinationFilename>
+              <DestinationFilename>%Plugins%\process\SQLite.Interop.dll</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="PlatformTarget_x64">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x64\SQLite.Interop.dll</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{8ec3d500-6ad3-43a9-8a69-709b110a0ac5}-SQLite.Interop.dll</ZipFileName>
-              <DestinationFilename>%Plugins%\process\x64\SQLite.Interop.dll</DestinationFilename>
+              <DestinationFilename>%Plugins%\process\SQLite.Interop.dll</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -324,10 +324,11 @@ Click Next to continue or Cancel to exit Setup.</Value>
     <VersionDescription>* Resolve bug that prevented the Banner, Backdrop and Cover Art from getting fetched
 * Fixed SSL error, null selection error and GUI setting position
 * Fixed static version value
+* Fix SQLite.Interop location
 </VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/DVDArt/releases/download/v[Version]/[Name]-v[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-05-20T18:18:18</ReleaseDate>
+    <ReleaseDate>2024-05-21T21:21:21</ReleaseDate>
     <Tags>dvdart, cover art, clear art, clear logo, scraper, movingpictures, tvseries, music, actors, writers, directors, myfilms</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>[Name]-v[Version].mpe1</Location>
@@ -398,14 +399,14 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x86\SQLite.Interop.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{44695331-cbee-4680-b0c9-ff9c925b56fa}-SQLite.Interop.dll</ZipFileName>
-        <DestinationFilename>%Plugins%\process\x86\SQLite.Interop.dll</DestinationFilename>
+        <DestinationFilename>%Plugins%\process\SQLite.Interop.dll</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\DVDArt\DVDArt_Plugin\bin\Release\x64\SQLite.Interop.dll</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{8ec3d500-6ad3-43a9-8a69-709b110a0ac5}-SQLite.Interop.dll</ZipFileName>
-        <DestinationFilename>%Plugins%\process\x64\SQLite.Interop.dll</DestinationFilename>
+        <DestinationFilename>%Plugins%\process\SQLite.Interop.dll</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true" Condition="None">
         <Param1 />
