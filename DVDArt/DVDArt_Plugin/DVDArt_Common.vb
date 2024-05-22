@@ -2257,8 +2257,8 @@ Public Class DVDArt_Common
         maxsize = 600
 
         'initialize language array
-        lang = {"English", "Deutsch", "Française", "Italiano", "русский", "Any"}
-        langcode = {"EN", "DE", "FR", "IT", "RU", "##"}
+        lang = {"English", "Deutsch", "Française", "Italiano", "русский"} ', "Any"
+        langcode = {"EN", "DE", "FR", "IT", "RU"} ', "##"
 
         'Build the path of the assembly from where it has to be loaded.
         Dim strTempAssmbPath As String
