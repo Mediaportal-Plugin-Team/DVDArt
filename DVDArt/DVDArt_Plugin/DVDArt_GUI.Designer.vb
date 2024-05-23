@@ -2923,7 +2923,7 @@ Partial Class DVDArt_GUI
         Me.cb_language.Name = "cb_language"
         Me.cb_language.Size = New System.Drawing.Size(142, 24)
         Me.cb_language.TabIndex = 7
-        Me.cb_language.Text = "Any"
+        Me.cb_language.Text = "English" ' "Any"
         '
         'Label6
         '
