@@ -2397,10 +2397,11 @@ Public Class DVDArt_Common
             image.Dispose()
         End If
 
-    ' ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12 Or SecurityProtocolType.SystemDefault
-    ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls
+        ' ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls Or SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12 Or SecurityProtocolType.SystemDefault
+        ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 Or SecurityProtocolType.Tls Or 768 Or 3072 Or 0 ' Tls11 (768), Tls12 (3072), and SystemDefault (0) missing on Framework 4.0
+        ServicePointManager.DefaultConnectionLimit = 200
 
-    logStats("DVDArt: Initialization complete.", "LOG")
+        logStats("DVDArt: Initialization complete.", "LOG")
 
     End Sub
 
