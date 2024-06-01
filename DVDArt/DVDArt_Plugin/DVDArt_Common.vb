@@ -1450,17 +1450,18 @@ Public Class DVDArt_Common
             HttpWebRequest.Timeout = timeout * 2
 
             ' Request response:
-            Dim WebResponse As System.Net.WebResponse = HttpWebRequest.GetResponse()
+            Using WebResponse As System.Net.WebResponse = HttpWebRequest.GetResponse()
 
-            ' Open data stream:
-            Dim _WebStream As System.IO.Stream = WebResponse.GetResponseStream()
+                ' Open data stream:
+                Dim _WebStream As System.IO.Stream = WebResponse.GetResponseStream()
 
-            ' convert webstream to image
-            tmpImage = Image.FromStream(_WebStream)
+                ' convert webstream to image
+                tmpImage = Image.FromStream(_WebStream)
 
-            ' Cleanup
-            WebResponse.Close()
-            WebResponse.Close()
+                ' Cleanup
+                'WebResponse.Close()
+                'WebResponse.Close()
+            End Using
 
         Catch Exception As Exception
             Return Nothing
