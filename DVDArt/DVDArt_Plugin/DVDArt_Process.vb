@@ -91,7 +91,7 @@ Public Class DVDArt_Process
                         If filenotexist(0) Or filenotexist(1) Or filenotexist(2) Then
                             li_import = lv_import.Items.Add(mymovies(i).name)
                             li_import.SubItems.Add(mymovies(i).imdb_id)
-                            li_import.SubItems.Add("movie")
+                            li_import.SubItems.Add("movies")
 
                             For y = 0 To 5
                                 li_import.SubItems.Add(filenotexist(y))
@@ -143,7 +143,7 @@ Public Class DVDArt_Process
                         If filenotexist(1) Or filenotexist(2) Then
                             li_import = lv_import.Items.Add(SQLreader(1))
                             li_import.SubItems.Add(SQLreader(0))
-                            li_import.SubItems.Add("series")
+                            li_import.SubItems.Add("tv")
 
                             For y = 1 To 2
                                 li_import.SubItems.Add(filenotexist(y))
@@ -288,7 +288,7 @@ Public Class DVDArt_Process
 
                     If Trim(mymovies(i).imdb_id) <> "" Then
 
-                        If Not processed_movies.Contains(mymovies(i).imdb_id) Then
+                        If processed_movies Is Nothing OrElse Not processed_movies.Contains(mymovies(i).imdb_id) Then
                             DVDArt_Common.logStats("DVDArt: Background Import - new movie - """ & mymovies(i).name & """ found.", "DEBUG")
                             li_import = lv_import.Items.Add(mymovies(i).name)
                             li_import.SubItems.Add(mymovies(i).imdb_id)
@@ -397,7 +397,7 @@ Public Class DVDArt_Process
 
                     If Trim(myseries(i).thetvdb_id) <> "" Then
 
-                        If Not processed_series.Contains(myseries(i).thetvdb_id) Then
+                        If processed_series Is Nothing OrElse Not processed_series.Contains(myseries(i).thetvdb_id) Then
                             DVDArt_Common.logStats("DVDArt: new serie - """ & myseries(i).name & """ found.", "DEBUG")
                             li_import = lv_import.Items.Add(myseries(i).name)
                             li_import.SubItems.Add(myseries(i).thetvdb_id)
