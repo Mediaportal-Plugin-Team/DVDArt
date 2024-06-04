@@ -1652,6 +1652,7 @@ Public Class DVDArt_Common
                                 bw_download8.RunWorkerAsync(parm)
                                 Exit Do
                             Else
+                                Application.DoEvents()
                                 wait(250)
                             End If
                         Loop
@@ -1691,6 +1692,7 @@ Public Class DVDArt_Common
                                 bw_download9.RunWorkerAsync(parm)
                                 Exit Do
                             Else
+                                Application.DoEvents()
                                 wait(250)
                             End If
                         Loop
